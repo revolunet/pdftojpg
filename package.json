@@ -1,18 +1,22 @@
 {
   "name": "pdftojpg",
   "version": "1.0.0",
-  "description": "PDf to jpg HTTP API",
+  "description": "micro HTTP API for pdf to jpg conversion on top of gm",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src"
   },
-  "keywords": [],
+  "keywords": [
+    "api",
+    "http",
+    "pdf",
+    "gm"
+  ],
   "author": "Julien Bouquillon <julien@revolunet.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "pdf2img": "github:revolunet/node-pdf2img"
+    "gm": "^1.23.0"
   }
 }
