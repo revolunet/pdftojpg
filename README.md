@@ -1,6 +1,6 @@
 # pdftojpg
 
-HTTP API on top of [node-pdf2img]
+HTTP API on top of [node-pdf2img](https://github.com/fitraditya/node-pdf2img)
 
 return a JPG of the first page of the given PDF.
 
