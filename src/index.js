@@ -5,7 +5,7 @@ var app = express()
 
 app.post("/convert", function(req, res) {
   console.log("starting PDF->JPG conversion")
-  gm(req).toBuffer("JPG", function(err, buffer) {
+  gm(req).toBuffer("jpeg", function(err, buffer) {
     if (err) {
       console.error('ERROR', err);
       res.status(500).json({
