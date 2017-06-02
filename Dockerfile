@@ -41,7 +41,7 @@ RUN apk add --update lzip \
     rm GraphicsMagick-$PKGVER.tar.lz
 
 ENV PORT 1234
-RUN mkdir -p /home/app/src/outputfork
+RUN mkdir -p /home/app/src
 WORKDIR /home/app
 COPY package.json /home/app/
 COPY src/ /home/app/src/
