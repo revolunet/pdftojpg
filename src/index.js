@@ -18,7 +18,8 @@ app.post("/convert", function(req, res) {
   })
 })
 
-app.listen('8888', () => {
-  console.log('listening on http://127.0.0.1:8888')
-})
+var port = process.env.PORT || 8888;
 
+app.listen(port, () => {
+  console.log(`listening on http://127.0.0.1:${port}`)
+})

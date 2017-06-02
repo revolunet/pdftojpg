@@ -40,11 +40,12 @@ RUN apk add --update lzip \
     rm -rf GraphicsMagick-$PKGVER && \
     rm GraphicsMagick-$PKGVER.tar.lz
 
-RUN mkdir -p /home/app
+ENV PORT 1234
+RUN mkdir -p /home/app/src/outputfork
 WORKDIR /home/app
 COPY package.json /home/app/
-COPY src/ /home/app/
+COPY src/ /home/app/src/
 RUN npm install
 
-EXPOSE 3000
+EXPOSE $PORT
 CMD [ "npm", "start" ]
