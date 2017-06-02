@@ -5,7 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src"
+    "start": "node src",
+    "deploy": "now"
+  },
+  "now": {
+    "type": "docker"
   },
   "keywords": [
     "api",
