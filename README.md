@@ -1,6 +1,6 @@
 # pdftojpg
 
-micro HTTP API on top of [gm](https://github.com/aheckmann/gm)
+HTTP microservice on top of [gm](https://github.com/aheckmann/gm)
 
 return a JPG of the first page of the given PDF.
 
